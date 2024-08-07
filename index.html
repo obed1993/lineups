@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	 
+	 <meta name="google-adsense-account" content="ca-pub-9617191770288474">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BET A.I</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: green; 
+        }
+
+        h1 {
+            color: #FFFFFF; /* White */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #FFFFFF; /* White */
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50; /* Green */
+            color: #FFFFFF; /* White */
+            border: none;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #555; /* Grey */
+            cursor: not-allowed;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #FFFFFF; /* White */
+        }
+		
+		 footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+		
+    </style>
+</head>
+<body>
+<p>
+
+
+<p>
+    <h1>Enter Two Teams Playing And Get Bet Odds</h1>
+
+    <label for="team1">Enter Team 1:</label>
+    <input type="text" id="team1" placeholder="Team 1">
+
+    <br>
+
+    <label for="team2">Enter Team 2:</label>
+    <input type="text" id="team2" placeholder="Team 2">
+
+    <br>
+
+    <button onclick="suggestOutcome()">ROBOT BET ODDS</button>
+
+    <br>
+
+    <B id="result"></B>
+
+    <script>
+	
+	
+	
+
+        function suggestOutcome() {
+	
+		
+		
+		
+            var team1 = document.getElementById("team1").value;
+            var team2 = document.getElementById("team2").value;
+
+            if (team1.trim() === "" || team2.trim() === "") {
+                alert("Please enter both teams");
+                return;
+            }
+
+            var outcomes = ["HOME OR AWAY", " OVER 1.5", "OVER 8.5 CORNERS", ];
+            var randomIndex = Math.floor(Math.random() * outcomes.length);
+            var suggestedOutcome = outcomes[randomIndex];
+			 var Team1 = Math.floor(Math.random() * 17) + 1;
+			 var Team2 = Math.floor(Math.random() * 13) + 1;
+			 var shotsOnTargetTeam1 = Math.floor(Math.random() * 5);
+			 var shotsOnTargetTeam2 = Math.floor(Math.random() * 4);
+
+			
+			 var result = 
+                   'Shots Attempt: ' + team1 + ' ' + Team1 + ' - ' + Team2 + ' ' + team2 + '<br>' +
+                   'Shots On Traget: ' + team1 + ' ' + shotsOnTargetTeam1 + ' - ' + shotsOnTargetTeam2 + ' ' + team2;
+			
+			
+			document.getElementById("result").innerHTML = "BET ODDS: " + suggestedOutcome + "<br><p> <a href=' https://bet32.github.io/live/  '> CLICK HERE TO CHECK ANOTHER MATCH  </a>  <br><p> <a href='https://youtu.be/j0EdkyOEDFc '> CLICK HERE TO WATCH AND GET BOOKING CODE FOR TODAY  </a>  <br> <p>"  + result;
+
+			
+		
+
+            // Disable the button after it is clicked
+            document.querySelector('button').disabled = true;
+        }
+		
+		
+		
+		
+		
+		
+    </script>
+	
+<p> <br> <p> <br> <p> <br> <p>
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	  <footer>
+    
+	
+	<p>EMAIL:      newsandgame2021@gmail.com</p>
+    <p>SERVICE:    FOOTBALL ARTIFICIAL INTELLIGENCE </p>
+    <p>ABOUT US:   BET-ROBOT  IS AN ONLINE TECHNOLOGY COMPANY  <br>THAT BUILDS FOOTBALL ARTIFICIAL INTELLIGENCE</p>
+  </footer>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
